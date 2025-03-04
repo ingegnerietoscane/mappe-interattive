@@ -1,1 +1,1 @@
-Nella cartella docs ci sono gli url da utilizzare per aprire le mappe con gli FS
+Nella cartella docs c'è il file url_list.json che contiene gli url da utilizzare per aprire le mappe con gli FS attivi 
