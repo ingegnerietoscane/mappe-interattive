@@ -1,1 +1,1 @@
-vengono salvati gli url defli FS attivi
+vengono salvati gli url degli FS attivi
