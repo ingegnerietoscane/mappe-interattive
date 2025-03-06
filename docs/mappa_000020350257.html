@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_90ef51f3c0d65538d25e35d82d9e299c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_90ef51f3c0d65538d25e35d82d9e299c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_90ef51f3c0d65538d25e35d82d9e299c = L.map(
+                "map_90ef51f3c0d65538d25e35d82d9e299c",
+                {
+                    center: [43.771, 11.254],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5b564a6ec0f6ecdf92d56ba86d29225 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d5b564a6ec0f6ecdf92d56ba86d29225.addTo(map_90ef51f3c0d65538d25e35d82d9e299c);
+        
+    
+        function geo_json_2386b1ad76b763db26ffb83e5c93e72e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#3186cc", "fillOpacity": 0.4, "weight": 2};
+            }
+        }
+
+        function geo_json_2386b1ad76b763db26ffb83e5c93e72e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_2386b1ad76b763db26ffb83e5c93e72e = L.geoJson(null, {
+                onEachFeature: geo_json_2386b1ad76b763db26ffb83e5c93e72e_onEachFeature,
+            
+                style: geo_json_2386b1ad76b763db26ffb83e5c93e72e_styler,
+        });
+
+        function geo_json_2386b1ad76b763db26ffb83e5c93e72e_add (data) {
+            geo_json_2386b1ad76b763db26ffb83e5c93e72e
+                .addData(data);
+        }
+            geo_json_2386b1ad76b763db26ffb83e5c93e72e_add({"features": [{"geometry": {"coordinates": [[[10.714932432220925, 43.83962834316778], [10.714344667105197, 43.83967747160357], [10.714105971232305, 43.839813703144266], [10.713722220895807, 43.83987991754617], [10.71349098876747, 43.84006614205356], [10.713125533000733, 43.84210259017918], [10.713035739746742, 43.84217738369903], [10.712586787605167, 43.84204341732039], [10.712166215127766, 43.842037415537696], [10.711880292903116, 43.84215913255564], [10.711729165511246, 43.842348539454996], [10.711719092899617, 43.8425666378541], [10.71185163944992, 43.84276226691092], [10.712486145739575, 43.842987890450566], [10.711424427052602, 43.8463832563347], [10.711516423492155, 43.8466779474274], [10.711845166277902, 43.84686414739143], [10.712292322443691, 43.84684912845004], [10.712621462099564, 43.84660028475424], [10.713589676853138, 43.84351745368679], [10.714086341203958, 43.84365792359821], [10.715036117741494, 43.84361254045028], [10.715210568664922, 43.844248891601985], [10.715578862218987, 43.844495953590645], [10.716052227358954, 43.84447560812858], [10.716377530562399, 43.84419873509892], [10.716215660916763, 43.84319452157279], [10.715981285828864, 43.84284827440712], [10.715546112788678, 43.842698562341106], [10.714244184290365, 43.84275132029278], [10.714125616074453, 43.84269386069169], [10.71499572850213, 43.842591885271105], [10.715305007089706, 43.84242152787071], [10.715413185077075, 43.84219553640707], [10.7153486799556, 43.841964987350195], [10.715628244775065, 43.84159582605162], [10.715550817712886, 43.84128935754941], [10.715822560166878, 43.84095332845127], [10.715882093636774, 43.84033169180357], [10.715815642611574, 43.84009635992983], [10.715315460208219, 43.839717422632305], [10.714932432220925, 43.83962834316778]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_2386b1ad76b763db26ffb83e5c93e72e.bindTooltip(
+                `<div>
+                     ZONA FUORI SERVIZIO PER: RIDUZIONE DI PORTATA<br>INIZIO LAVORI: 2025-03-13 08:00:00<br>FINE LAVORI: 2025-03-13 10:00:00<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            geo_json_2386b1ad76b763db26ffb83e5c93e72e.addTo(map_90ef51f3c0d65538d25e35d82d9e299c);
+        
+    
+            map_90ef51f3c0d65538d25e35d82d9e299c.fitBounds(
+                [[43.83962834316778, 10.711424427052602], [43.84686414739143, 10.716377530562399]],
+                {}
+            );
+        
+</script>
+</html>
