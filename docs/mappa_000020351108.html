@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f0e63cca11dc026ebb86aa54e2fd996 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2f0e63cca11dc026ebb86aa54e2fd996" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2f0e63cca11dc026ebb86aa54e2fd996 = L.map(
+                "map_2f0e63cca11dc026ebb86aa54e2fd996",
+                {
+                    center: [43.771, 11.254],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bc66af21eb9e3318827a8b0cadad3308 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bc66af21eb9e3318827a8b0cadad3308.addTo(map_2f0e63cca11dc026ebb86aa54e2fd996);
+        
+    
+        function geo_json_d2d75d44c630b815e364ba9775c7c405_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#000000", "fillColor": "#3186cc", "fillOpacity": 0.4, "weight": 2};
+            }
+        }
+
+        function geo_json_d2d75d44c630b815e364ba9775c7c405_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d2d75d44c630b815e364ba9775c7c405 = L.geoJson(null, {
+                onEachFeature: geo_json_d2d75d44c630b815e364ba9775c7c405_onEachFeature,
+            
+                style: geo_json_d2d75d44c630b815e364ba9775c7c405_styler,
+        });
+
+        function geo_json_d2d75d44c630b815e364ba9775c7c405_add (data) {
+            geo_json_d2d75d44c630b815e364ba9775c7c405
+                .addData(data);
+        }
+            geo_json_d2d75d44c630b815e364ba9775c7c405_add({"features": [{"geometry": {"coordinates": [[[10.722285980597826, 43.84609587455167], [10.721836105298781, 43.84624430831124], [10.721063870693742, 43.84710582619994], [10.721210513450854, 43.84746844880084], [10.721661290018563, 43.84762228532783], [10.721716350927633, 43.848003859001984], [10.721559249972136, 43.849728960061526], [10.72109002793829, 43.85140990239907], [10.719807055658508, 43.85234528824912], [10.718724366441101, 43.85332916501301], [10.717784928401118, 43.85464223379708], [10.7172413409706, 43.856216849607094], [10.717227572229142, 43.857344619818164], [10.716855678243471, 43.858533679675105], [10.716919171770709, 43.85886323077691], [10.717134982814912, 43.85907026388295], [10.717503124359105, 43.859157291650575], [10.717846237065288, 43.8590823867522], [10.718096185079796, 43.85884180490023], [10.718105638784458, 43.858545492357244], [10.71835145944289, 43.857820176920576], [10.719701961271852, 43.858160932915254], [10.720583576157672, 43.85854071075476], [10.721414713155246, 43.85874757906281], [10.723087651404775, 43.859457560891165], [10.723954237984666, 43.85995183048616], [10.723725680618776, 43.86076857171465], [10.72316382766157, 43.860983068559186], [10.722948764763107, 43.86126721343222], [10.723110481920617, 43.86163386359959], [10.723604794138081, 43.8617760130224], [10.726173739798794, 43.86089991529637], [10.726392146918535, 43.860748700923345], [10.726483330995912, 43.86056283741713], [10.726390474479713, 43.8602671190632], [10.726059420106006, 43.86008114796005], [10.725727970611562, 43.860069968688656], [10.725143564671312, 43.86023884464433], [10.725210252982803, 43.85985691734771], [10.725713180824503, 43.85908771659818], [10.72567918348986, 43.85885073611898], [10.725506160387429, 43.85867343625806], [10.725177063469202, 43.858567466395264], [10.724848745869489, 43.85860216498677], [10.724610032270792, 43.85873634415432], [10.724371789590291, 43.85902922561322], [10.722391159353196, 43.858114441149574], [10.722805639263845, 43.85616257530128], [10.723288147402707, 43.85527480299224], [10.723500765999324, 43.85441127355485], [10.723824749208356, 43.85369033614539], [10.724348815198502, 43.85309451193917], [10.724574853793438, 43.852666698265914], [10.725041421341912, 43.850925519972996], [10.72564799805319, 43.849411847472055], [10.725693950002942, 43.84899432730744], [10.725466987994798, 43.848229392402516], [10.725267485384048, 43.84792251497462], [10.722768242234237, 43.846218329268225], [10.722285980597826, 43.84609587455167]], [[10.722903771632673, 43.84753245646947], [10.72426380953124, 43.84846969145423], [10.724450634136597, 43.84915346679474], [10.723832093795826, 43.85071458246654], [10.723352467599568, 43.852484500198756], [10.722657379190364, 43.853379393467975], [10.722294989327988, 43.85418991634707], [10.722094464282495, 43.85502130047426], [10.721630503201736, 43.855857289828506], [10.72121112885588, 43.85775780862232], [10.720205523270451, 43.85733757617617], [10.718544003229633, 43.856895695111746], [10.718447987890753, 43.85677528805266], [10.718447516243206, 43.85646858305731], [10.71881013067416, 43.85522013864279], [10.719601052026226, 43.853999389477984], [10.720742359042594, 43.85293888028027], [10.721949116529801, 43.85210044258257], [10.722257845441751, 43.85172025569313], [10.72289541284859, 43.84927268710442], [10.722903771632673, 43.84753245646947]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_d2d75d44c630b815e364ba9775c7c405.bindTooltip(
+                `<div>
+                     ZONA FUORI SERVIZIO PER: RIDUZIONE DI PORTATA<br>INIZIO LAVORI: 2025-03-18 08:00:00<br>FINE LAVORI: 2025-03-18 15:30:00<br>TIPO: FSPROGRA<br>MOTIVO:RIDUZIONE DI PORTATA<br>COMUNE DI: Chiesina Uzzanese<br>UTENZE COINVOLTE: 170<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            geo_json_d2d75d44c630b815e364ba9775c7c405.addTo(map_2f0e63cca11dc026ebb86aa54e2fd996);
+        
+    
+            map_2f0e63cca11dc026ebb86aa54e2fd996.fitBounds(
+                [[43.84609587455167, 10.716855678243471], [43.8617760130224, 10.726483330995912]],
+                {}
+            );
+        
+</script>
+</html>
